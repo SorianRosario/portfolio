@@ -1,0 +1,203 @@
+.ubuntu-light {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.ubuntu-regular {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ubuntu-medium {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.ubuntu-bold {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.container {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    background-color: #212b38;
+    color: #fff;
+}
+
+.proyectos {
+    border-right: 1px solid #018abe;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 3 columnas de igual ancho */
+    gap: 20px; /* Espacio entre las tarjetas */
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .proyectos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 3 columnas de igual ancho */
+        gap: 20px; /* Espacio entre las tarjetas */
+        padding: 20px;
+    }
+}
+
+@media (max-width: 425px) {
+    .proyectos {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* 3 columnas de igual ancho */
+        gap: 20px; /* Espacio entre las tarjetas */
+        padding: 20px;
+    }
+}
+
+.sobreMi {
+    border-left: 1px solid #018abe;
+    padding: 20px;
+}
+
+.carta-proyecto {
+    
+    border-radius: 8px;
+    padding: 2px;
+    text-align: center;
+}
+
+.card-img {
+    width: 100%; /* Hace que la imagen ocupe todo el ancho del contenedor */
+    height: 150px; /* Ajusta la altura deseada */
+    object-fit: cover; /* Ajusta la imagen para que cubra el contenedor sin deformarse */
+    border-radius: 8px;
+}
+
+.btn-blue {
+    border-bottom: 1px solid #018abe;
+    color: white; /* Texto blanco */
+    border-radius: 8px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de fuente */
+    font-weight: bold; /* Texto en negrita */
+    cursor: pointer; /* Cursor de mano al pasar por encima */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transiciones para el hover */
+}
+
+.btn-blue:hover {
+    background-color: #1c7ed6; /* Color azul más oscuro al hacer hover */
+    transform: translateY(-2px); /* Efecto de levantarse un poco */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.7);
+}
+
+.btn-blue:active {
+    background-color: #155fa0; /* Color más oscuro cuando se presiona */
+    transform: translateY(0); /* Regresa al lugar cuando se presiona */
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer {
+    
+    border-left: 1px solid #018abe;
+    text-align: end;
+    height: 150px;
+    width: 100%;
+}
+
+.contact-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.contact-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.contact-button i {
+    margin-right: 8px;
+}
+
+.contact-button:hover {
+    transform: scale(1.05);
+}
+
+.whatsapp {
+    background-color: #25D366;
+}
+
+.linkedin {
+    background-color: #0077B5;
+}
+
+.instagram {
+    background-color: #E4405F;
+}
+
+.contact-button.github {
+    background-color: #333; /* Color característico de GitHub (gris oscuro) */
+    color: white; /* Texto blanco */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border: none;
+}
+
+.contact-button.github:hover {
+    background-color: #24292e; /* Color más oscuro al hacer hover */
+    color: white;
+}
+
+.contact-button.github svg {
+    fill: white; /* Asegura que el icono sea blanco */
+}
+
+.contact-button.github i {
+    font-size: 18px;
+}
+
+
+/*animacion de los titulos*/
+#typed-text {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    white-space: nowrap;
+    border-right: 2px solid;
+    width: fit-content;
+    overflow: hidden;
+    animation: blink 0.75s step-end infinite;
+    color: #018abe; /* El texto comienza en azul */
+    transition: color 0.5s ease-in-out; /* Suavizar la transición de color */
+}
+
+@keyframes blink {
+    from, to {
+    border-color: transparent;
+    }
+    50% {
+    border-color: #018abe;
+    }
+}
